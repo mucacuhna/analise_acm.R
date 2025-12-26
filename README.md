@@ -22,8 +22,8 @@ Identificar padrões visuais (clusters) que relacionam variáveis socioeconômic
 
 ### 📂 Estrutura dos Dados
 Para otimizar a visualização gráfica (Clusterização), as respostas foram recodificadas utilizando siglas.
-É de suma importância que seja feito um dicionário de códigos para, após a recodificação das respostas,
-haja uma maneira eficiente de identificar o que cada código representa.
+É de suma importância que seja feito um dicionário de códigos para que, após a recodificação das respostas,
+haja uma maneira eficiente de identificar o que cada código representa dentro daqueles quatro quadrantes.
 * **Padrão:** As categorias seguem a lógica `Variável` + `Resposta`.
 * **Exemplos:**
     * `G2` = Homem Cisgênero
@@ -34,7 +34,7 @@ haja uma maneira eficiente de identificar o que cada código representa.
 
 ### 🚀 Como executar este projeto
 1.  Certifique-se de ter o **R** e o **RStudio** instalados.
-2.  Clone este repositório ou baixe os arquivos.
+2.  Clone este repositório e, caso queira testar antes, baixe os arquivos e rode o programa.
 3.  Abra o arquivo `analise_acm.R`.
 4.  Certifique-se de que o arquivo de dados `Formulário Recodificado.xlsx - Planilha1.csv` está na mesma pasta do script.
 5.  Execute o script linha a linha.
