@@ -42,4 +42,4 @@ haja uma maneira eficiente de identificar o que cada código representa.
 O script irá gerar e salvar automaticamente o arquivo `mapa_acm_final.png`, que apresenta a dispersão das variáveis nas duas primeiras dimensões da ACM.
 
 ---
-📫 **Contato:** [Insira seu LinkedIn aqui]
+📫 **Contato:** [https://www.linkedin.com/in/murilo-cunha-71aa72299/]
