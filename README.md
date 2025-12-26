@@ -1,7 +1,7 @@
-# 📊 Análise de um Projeto Acadêmico: Aplicação de ACM em R
+# 📊 Aplicação da ACM dentro do R: Usando a estatística como meio de estudo acadêmico
 
 > **Projeto de Pesquisa: Evasão e Permanência dentro do curso de Ciências Sociais na FCLAR - PET Ciências Sociais**
-> Autor: Murilo Cunha
+> Autor do código: Murilo Cunha
 
 Este repositório contém o script de tratamento de dados e aplicação da **Análise de Correspondência Múltipla (ACM)** para investigar perfis de estudantes e fatores associados à evasão e permanência no curso de Ciências Sociais. Esse script pode ser usado como modelo para realização de outras ACMs em outros estudos estatísticos que possuem o objetivo de, além de cruzar informações, observar, estatisticamente
 o que une e separa os agentes sociais dentro daquele universo observado.
