@@ -1,9 +1,10 @@
-# 📊 Análise de Evasão e Permanência: Aplicação de ACM em R
+# 📊 Análise de um Projeto Acadêmico: Aplicação de ACM em R
 
-> **Projeto de Pesquisa - PET Ciências Sociais**
+> **Projeto de Pesquisa: Evasão e Permanência dentro do curso de Ciências Sociais na FCLAR - PET Ciências Sociais**
 > Autor: Murilo Cunha
 
-Este repositório contém o script de tratamento de dados e aplicação da **Análise de Correspondência Múltipla (ACM)** para investigar perfis de estudantes e fatores associados à evasão e permanência no curso de Ciências Sociais.
+Este repositório contém o script de tratamento de dados e aplicação da **Análise de Correspondência Múltipla (ACM)** para investigar perfis de estudantes e fatores associados à evasão e permanência no curso de Ciências Sociais. Esse script pode ser usado como modelo para realização de outras ACMs em outros estudos estatísticos que possuem o objetivo de, além de cruzar informações, observar, estatisticamente
+o que une e separa os agentes sociais dentro daquele universo observado.
 
 ### 🎯 Objetivo
 Identificar padrões visuais (clusters) que relacionam variáveis socioeconômicas e acadêmicas, transformando dados qualitativos em um mapa perceptual para auxiliar na compreensão do fluxo estudantil.
