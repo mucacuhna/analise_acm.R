@@ -19,17 +19,15 @@ Identificar padrões visuais (clusters) que relacionam variáveis socioeconômic
 
 ---
 
-### 📂 Dicionário de Variáveis (Legenda do Gráfico)
-Como os dados foram recodificados para a análise estatística, utilize a tabela abaixo para interpretar as siglas apresentadas no gráfico:
-
-| Variável (Código) | Significado | Categorias Principais |
-| :--- | :--- | :--- |
-| **GEN** | Gênero | **M** (Masculino), **F** (Feminino), **NB** (Não-binário) |
-| **ETN** | Etnia (Autodeclaração) | **B** (Branco), **P** (Pardo), **PT** (Preto) |
-| **BOL** | Possui Bolsa? | **S** (Sim), **N** (Não) |
-| **TRA** | Trabalha? | **S** (Sim), **N** (Não) |
-| **ANO** | Ano de Ingresso | Ex: **2020**, **2021**, **2022** |
-*(Adicione outras categorias aqui se necessário)*
+### 📂 Estrutura dos Dados
+Para otimizar a visualização gráfica (Clusterização), as respostas foram recodificadas utilizando siglas.
+É de suma importância que seja feito um dicionário de códigos para, após a recodificação das respostas,
+haja uma maneira eficiente de identificar o que cada código representa.
+* **Padrão:** As categorias seguem a lógica `Variável` + `Resposta`.
+* **Exemplos:**
+    * `G2` = Homem Cisgênero
+    * `I3` = 23-25 anos
+    * `S3` = Bissexual
 
 ---
 
