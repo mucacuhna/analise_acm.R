@@ -44,11 +44,11 @@ O script irá gerar e salvar automaticamente o arquivo `mapa_acm_final.png`, que
 
 ---
 
-# ==============================================================================
+# ===============================================================
 # Título: Análise de Correspondência Múltipla (ACM) - Ciências Sociais
 # Projeto: Evasão e Permanência (PET Ciências Sociais)
 # Autor: Murilo Cunha
-# ==============================================================================
+# =============================================================
 
 # --- 1. Instalação e Carregamento de Pacotes ---
 
