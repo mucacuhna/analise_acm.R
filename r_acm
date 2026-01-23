@@ -1,0 +1,75 @@
+# --- 1. Instalação e Carregamento de Pacotes ---
+
+# Verifica se os pacotes existem. Se não, instala e carrega.
+pacotes <- c("FactoMineR", "factoextra", "ggplot2", "readr")
+
+novos_pacotes <- pacotes[!(pacotes %in% installed.packages()[,"Package"])]
+if(length(novos_pacotes)) install.packages(novos_pacotes)
+
+library(FactoMineR) # Cálculos da ACM
+library(factoextra) # Visualização gráfica
+library(ggplot2)    # Customização de gráficos
+library(readr)      # Leitura otimizada de CSV
+
+# --- 2. Importação e Tratamento dos Dados ---
+
+# Lendo o arquivo recodificado
+# 'stringsAsFactors = TRUE' é essencial para ACM em base R
+dados <- read.csv("Formulário Recodificado.xlsx - Planilha1.csv", 
+                  sep = ",", 
+                  stringsAsFactors = TRUE, 
+                  encoding = "UTF-8")
+
+# Conferência inicial
+head(dados)
+colnames(dados)
+
+# LIMPEZA: Remove a coluna "Carimbo de data/hora" (coluna 1)
+dados_acm <- dados[, -1] 
+
+# Opcional: Remover identificadores extras se existirem
+# dados_acm <- subset(dados_acm, select = -c(Email))
+
+# --- 3. Execução da ACM (MCA) ---
+
+# graph = FALSE evita plotar agora para customizar depois
+res.mca <- MCA(dados_acm, graph = FALSE)
+
+# Resumo estatístico (Autovalores e inércia das primeiras dimensões)
+summary(res.mca, nbelements = 0, ncp = 2)
+
+# --- 4. Plotagem do Gráfico (Mapa Perceptual) ---
+
+grafico <- fviz_mca_var(res.mca, 
+             repel = TRUE,        # Evita sobreposição de textos
+             geom = c("point", "text"), 
+             col.var = "black",   # Cor das variáveis
+             alpha.var = 0.7,     # Transparência
+             shape.var = 15) +    # Formato do ponto
+  
+  # Customização visual
+  labs(title = "Mapa Perceptual - Evasão e Permanência",
+       subtitle = "Análise de Correspondência Múltipla (ACM)",
+       caption = "Fonte: Pesquisa PET Ciências Sociais | Autor: Murilo Cunha",
+       x = "Dimensão 1", 
+       y = "Dimensão 2") +
+  
+  # Tema acadêmico limpo
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5, face = "bold", size = 14),
+    plot.subtitle = element_text(hjust = 0.5, size = 11),
+    axis.title = element_text(face = "bold"),
+    panel.grid.major = element_line(color = "gray90"),
+    panel.background = element_rect(fill = "white", color = NA)
+  )
+
+# Exibe na tela
+print(grafico)
+
+# --- 5. Exportação ---
+
+# Salva em 300 DPI
+ggsave("mapa_acm_final.png", plot = grafico, width = 10, height = 7, dpi = 300)
+
+message("Análise concluída e gráfico salvo como 'mapa_acm_final.png'.")
